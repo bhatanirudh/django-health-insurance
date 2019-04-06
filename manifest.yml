@@ -1,0 +1,15 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: deloitte-insurance
+  buildpack: python_buildpack
+  #buildpack: https://github.com/cloudfoundry/python-buildpack#v1.6.3
+  #buildpack:  https://github.com/cloudfoundry/python-buildpack
+  #command: gunicorn --env DJANGO_SETTINGS_MODULE=PythonWebAppwithDjangoHHCQR.settings.production PythonWebAppwithDjangoHHCQR.wsgi -b 0.0.0.0:$PORT
+  command: gunicorn --env DJANGO_SETTINGS_MODULE=insurance.settings insurance.wsgi -b 0.0.0.0:$PORT
+  memory: 256MB
+  domain: eu-gb.mybluemix.net
+  host: anirudh-health1
+  web: python manage.py runserver
+  random-route: false

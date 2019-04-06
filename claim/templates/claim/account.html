@@ -1,0 +1,39 @@
+{% extends "claim/base.html" %}
+{% block content %}
+
+
+
+    <div class="container2">
+    <form method="post" enctype="multipart/form-data">
+    <h1><p><font face="verdana" color="black">Enter New Claim Details</font></p></h1>
+        <br/>
+
+    {% csrf_token %}
+
+      <p><font face="verdana" size="4.5" color="black">Enter Claim Policy Number</font>
+        <input type="text"
+       min="10" max="100000" class="input" name="policy" required></p>
+
+      <p><font face="verdana" size="4.5" color="black">Enter Claim Amount</font>
+        <input type="number"
+       min="10" max="100000" class="input" name="amount" required></p>
+
+      <p><font face="verdana" size="4.5" color="black">Upload Doctor Prescription (Scanned pdf)</font>
+        <input type="file" name="document" accept="application/pdf" required></p>
+
+      <p><font face="verdana" size="4.5" color="black">Upload Invoice (in pdf Format)</font>
+        <input type="file" name="invoice" accept="application/pdf" required></p>
+
+      <p><font face="verdana" size="4.5" color="black">Upload Image URL of your Signature</font>
+        <input type="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30" class="input"  name="signature" required></p>
+
+    <button type="submit" style="border-radius:5px; border: none">Submit</button>
+    </form>
+
+  <p><font face="verdana" size=2 color=red>*All Fields are Mandatory</font></p>
+ </div>
+  
+
+{% endblock content %}

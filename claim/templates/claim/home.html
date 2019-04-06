@@ -1,0 +1,17 @@
+{% extends "claim/base.html" %}
+{% block content %}
+    {% for post in posts %}
+        <h1>{{ post.a }}</h1>
+        <br/>
+        <p>{{ post.b }}</p>
+        <p>{{ post.c }}</p>
+        <p>{{ post.d }}</p>
+        <p></p>
+        <br/>
+        {% if user.is_authenticated %}
+            <h4><a class="nav-link2" href="{% url 'claim-account' %}">{{ post.f }}</a></h4>
+            {% else %}
+            <h4><a class="nav-link2" href="{% url 'clogin' %}">{{ post.e }}</a></h4>
+            {% endif %}
+    {% endfor %}
+{% endblock content %}

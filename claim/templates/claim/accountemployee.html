@@ -1,0 +1,12 @@
+{% extends "claim/base.html" %}
+{% block content %}
+<p><font face="verdana" size="15" color="black">UPLOAD</font></p>
+<p><font face="verdana" size="4.5" color="black">Upload invoice (only for employee)</font></p>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+     <button type="submit"> file</button>
+  </form>
+  <p><font face="verdana" size="4.5" color="black"> </font></p>
+  
+{% endblock content %}

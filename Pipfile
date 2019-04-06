@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-crispy-forms = "*"
+render = "*"
+django = "*"
+image = "*"
+pyocr = "*"
+pyodbc = "*"
+openpyxl = "*"
+numpy = "*"
+svm = "*"
+scikit-learn = "*"
+imagehash = "*"
+matplotlib = "*"
+pypdf2 = "*"
+pip = "==19.0.3"
+pdfminer = "*"
+pdfminer3k = "*"
+pdfdocument = "*"
+
+[requires]
+python_version = "3.6"
