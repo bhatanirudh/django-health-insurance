@@ -68,7 +68,7 @@ urllib3==1.24.1
 virtualenv==16.4.3
 virtualenv-clone==0.5.2
 Wand==0.5.1
-Werkzeug==0.15.1
+Werkzeug==0.15.3
 whitenoise==4.1.2
 dj-static==0.0.6
 ibmcloudenv
