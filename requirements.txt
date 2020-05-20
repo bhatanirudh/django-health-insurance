@@ -15,7 +15,7 @@ Flask==1.0.2
 gcloud==0.18.3
 googleapis-common-protos==1.5.8
 gunicorn==19.9.0
-httplib2==0.12.1
+httplib2==0.18.0
 ibm-db==3.0.1
 idna==2.8
 ImageHash==4.0
