@@ -54,7 +54,7 @@ PyYAML==5.1
 regex==2019.3.12
 requests==2.21.0
 rossum==0.6.0
-rsa==4.0
+rsa==4.1
 scikit-learn==0.20.3
 scipy==1.2.1
 six==1.12.0
